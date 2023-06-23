@@ -4,5 +4,5 @@ WHERE PRICE IN (
     SELECT MAX(PRICE) 
     FROM FOOD_PRODUCT 
     GROUP BY CATEGORY
-) AND CATEGORY IN ('°úÀÚ', '±¹', '±èÄ¡', '½Ä¿ëÀ¯')
+) AND CATEGORY IN ('ê³¼ìž', 'êµ­', 'ê¹€ì¹˜', 'ì‹ìš©ìœ ')
 ORDER BY MAX_PRICE DESC

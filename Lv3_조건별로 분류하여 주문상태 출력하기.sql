@@ -1,4 +1,4 @@
-SELECT order_id, product_id, date_format(out_date, '%Y-%m-%d') out_date, 
+SELECT order_id, product_id, date_format(out_date, '%Y-%m-%d') AS out_date, 
 CASE 
 WHEN date_format(out_date, '%Y-%m-%d') <= '2022-05-01' THEN '출고완료'
 WHEN date_format(out_date, '%Y-%m-%d') > '2022-05-01' THEN '출고대기'
